@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+
+  --bg-color: #000;
+  --bg-input: #06181C;
+  --input-placeholder: #7C7C8A;
+  --bg-button: #065E7C;
+  --button-text: #FFF;
+  --table-bg: #092D38;
+  --table-text: #E1E1E6;
+  --table-btntext: #F75A68;
+  --bg-odd: #06161B80;
+  --bg-even: #06181C;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--bg-color);
+}
+
+#app {
+  max-width: 111.2rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 11.5rem 0 8.7rem;
+}
+
+header input {
+  width: 46.2rem;
+  padding: 1.6rem;
+  background: var(--bg-input);
+  border-radius: 0.5rem;
+
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.6rem;
+  
+}
+
+header .input-group {
+  display: flex;
+  gap: 0.8rem;
+}
+
+input::placeholder {
+  color: var(--Platform-Aliases-Placeholder, #7C7C8A);
+  font-family: Roboto;
+  font-size: 1.6rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+header button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.2rem 3.2rem;
+  background: var(--bg-button);
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  width: 17rem;
+  height: 4.8rem;
+}
+
+header button p {
+  color: var(--button-text);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0; 
+  border-collapse: separate; 
+  border: .1rem solid #4A808C;
+  border-radius: 1rem; 
+  overflow: hidden; 
+}
+
+table tbody td {
+  border-top: .1rem solid #4A808C;
+}
+
+table th {
+  background-color: var(--table-bg);
+  text-align: left;
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+table tbody td {
+  padding: 2.4rem 2.4rem 2.4rem 4rem;
+  
+}
+
+
+table, a, table button {
+  color: var(--table-text);
+  font-family: Roboto;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+table button {
+  background: none;
+  color: var(--table-btntext);
+  cursor: pointer;
+}
+
+table tbody img {
+  width: 5.6rem;
+  height: 5.6rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user span {
+  font-weight: 400;
+  margin: 0;
+}
+
+.user p {
+  margin: 0;
+}
+
+table tr:nth-child(odd) {
+  background: var(--bg-odd);
+}
+
+table tr:nth-child(even) {
+  background: var(--bg-even);
+}
+
+table tbody tr:first-child td {
+  border-top: none;
+}
+
+
+
+
+
+/*tabela vazia */
+.table-empty {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 6rem;
+
+  margin: 21rem 23.1rem 0 23.1rem;
+}
+
+.table-empty h2 {
+  color: #4E5455;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
